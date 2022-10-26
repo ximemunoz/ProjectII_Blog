@@ -1,0 +1,33 @@
+<div class="form-group">
+  <label for="title" style="color:bisque">Title</label>
+
+
+  <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+
+
+  <label for="description" style="color:bisque">Coffe Description</label>
+  <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+
+
+
+
+</div>
+<div class="form-group">
+
+
+
+
+  <label for="markdown" style="color:bisque">Rate it</label>
+  <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+
+
+
+
+
+
+</div>
+
+<a href="/" style="border-radius:25px;background-color:rgb(94, 41, 28);border-color:rgb(94, 41, 28) ;"class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary"style="border-radius:25px;background-color:rgb(87, 190, 66);border-color:rgb(87, 190, 66)" >Save</button>

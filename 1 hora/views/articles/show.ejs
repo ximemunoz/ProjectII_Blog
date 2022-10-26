@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cofee</title>
+</head>
+<body style="background-color:rgb(150, 101, 64);">
+  <div class="container">
+
+
+
+    <h1 class="mb-1" style="color:bisque"><%= article.title %></h1>
+    <div class="text-muted mb-2" style="color:bisque">
+      
+      
+      
+      <h4 style="color:bisque"><%= article.createdAt.toLocaleDateString() %></h4>
+    
+    
+    
+    </div>
+    <a href="/" style="border-radius:25px;background-color:rgb(226, 176, 130);border-color:rgb(223, 163, 108) " class="btn btn-primary">All Reviews</a>
+
+
+    <a href="/articles/edit/<%= article.id %>" style="border-radius:25px;background-color:rgb(87, 190, 66);border-color:rgb(87, 190, 66)" class="btn btn-info">Edit</a>
+
+    <div style="color:bisque">
+      <%- article.sanitizedHtml %>
+    </div>
+  </div>
+</body>
+</html>
